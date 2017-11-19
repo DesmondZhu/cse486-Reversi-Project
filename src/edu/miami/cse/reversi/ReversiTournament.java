@@ -5,6 +5,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Ordering;
 import edu.miami.cse.reversi.strategy.AlphaBeta;
+import edu.miami.cse.reversi.strategy.RandomStrategy;
 
 import java.util.List;
 import java.util.Map;
@@ -23,7 +24,7 @@ public class ReversiTournament {
         // List of the strategies in the tournament
         List<Strategy> strategies = Lists.newArrayList();
 
-//        strategies.add(new RandomStrategy());
+        strategies.add(new RandomStrategy());
         //strategies.add(new Human());
         strategies.add(new AlphaBeta());
         //strategies.add(new test());
